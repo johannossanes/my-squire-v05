@@ -1,0 +1,190 @@
+.magias-container{
+  display: flex;
+  gap: auto;
+}
+
+.magias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  gap: 15px;
+  }
+  
+  .magia-card {
+    display: flex;
+    background-color: #461957e6;
+    color: #f7de98;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    width: 400px; 
+    height: 200px;
+  }
+  
+  .magia-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid #f7de98;
+  }
+  
+  .magia-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .magia-info p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    line-height: 1.2;
+  }
+  
+
+  /* Estilo do botão Adicionar Magia */
+  .add-magia-btn {
+    margin: 10px;
+    top: 20px;
+    left: 420px; /* Alinha com o início da grid */
+    z-index: 100;
+    color: #fff;
+  }
+  
+  .add-magia-btn:hover {
+    background-color: #461957 ;
+    color: #f7de98;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: rgba(70, 25, 87, 0.75);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    color: #f7de98;
+    margin-bottom: 20px;
+    
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 10px;
+    color: #f7de98;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #461957;
+    border-radius: 5px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-buttons button {
+    background-color:  #461957;
+    color: #f7de98;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .modal-buttons button:hover {
+    background-color:  #f7de98;
+    color:  rgba(70, 25, 87, 0.75);
+  }
+
+  @media screen and (max-width:480px) {
+    .magias-container{
+      display: flex;
+      flex-direction: column;
+      gap: auto;
+
+    }.magias-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+    
+    .modal-content {
+      background-color: rgba(70, 25, 87, 0.75);
+      padding: 10px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    
+    .modal-content h2 {
+      color: #705815;
+      margin-bottom: 20px;
+      
+    }
+    
+    .modal-content label {
+      display: block;
+      margin-bottom: 10px;
+      color: #f7de98;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #461957;
+      border-radius: 5px;
+    }
+    
+    .modal-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .modal-buttons button {
+      background-color:  #461957;
+      color: #f7de98;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .magia-card { 
+      height: 100px;
+    }
+    
+  }
+  
+  

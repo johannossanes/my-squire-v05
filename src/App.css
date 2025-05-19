@@ -1,0 +1,114 @@
+
+.pagina-inicial{
+  height: 200%;
+  background-color: var(--fundo);
+  background-image: url(../public/elfamysquire.png), url(../public/cavaleiromysquire.png), url(../public/flordelis.png);
+  background-size: 20%, 25%, 10%;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: left bottom, right bottom, center center; 
+
+}
+
+h1{
+  margin: 60px;
+  font-size: 45px;
+  color: var(--branco);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+
+.logo{
+  width: 800px;
+}
+
+.tauba{
+  margin-top: 50px;
+  width: 500px;
+}
+
+.container-botoes{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+  padding: 50px;
+
+}
+
+.container-botoes button{
+  width: 500px;
+  height: 50px;
+
+  font-family: "Modern Antiqua", serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  color: var(--branco);
+
+
+}
+
+.botao-um{
+  background-color: var(--azul);
+
+}
+
+.botao-dois{
+  background-color: var(--preto);
+}
+
+.menu-entrar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  
+  gap: 50%;
+}
+
+footer{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+
+
+}
+
+
+
+@media screen and (max-width:480px) {
+  
+  h1{
+    font-size: 28px;
+  }
+
+  html, body {
+    background-size: 0%, 0%, 20%;
+  }
+
+  .tauba{
+    width: 80%;
+  }
+
+  .container img{
+    width: 60%;
+  }
+
+  .container-botoes button{
+    width: 300px;
+    height: 50px;
+
+  }
+    
+  
+
+}

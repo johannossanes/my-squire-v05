@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  width: 30%;
+  height: auto;
+  background-color: #461957bf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  color: #ffffff;
+}
+
+.sidebar__resumo {
+  margin-bottom: 20px;
+  width: 95%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  background-color: #461957;
+  color: #F7DE98;
+}
+
+.seta{
+  width: 10%;
+  opacity: 30%;
+  padding: 2px;
+
+}
+
+.volta{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 5px 5px;
+}
+
+.resumo__conteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.resumo__nomeimg {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resumo__nomeimg h2 {
+  color: #F7DE98;
+  text-align: center;
+  font-family: "Modern Antiqua";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.resumo__nomeimg img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.resumo__classenivel {
+  color: #F7DE98;
+  text-align: center;
+  font-family: "Modern Antiqua";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu li {
+  width: 100%;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-left: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  color: #F7DE98;
+  font-family: "Modern Antiqua";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.menu li img {
+  width: 80px;
+  height: 80px;
+}
+
+.menu li a:hover {
+  background-color: #461957;
+}
+
+.icon {
+  width: 15px; 
+  height: 15px;
+  margin-right: 10px; 
+  background-color: #F7DE98;
+}
+
+.volta {
+  color:#F7DE98;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:480px) {
+
+  .sidebar {
+    width: 100%;
+  
+  }
+
+  .menu li p {
+    display: none;
+    
+  }
+
+  .menu {
+    display: flex;
+  }
+  .menu li img {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .menu li a{
+    padding: 10px;
+    margin: 0;
+  }
+
+  
+
+}

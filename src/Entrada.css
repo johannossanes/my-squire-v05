@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Modern Antiqua;
+}
+
+
+::placeholder {
+    color: var(--amarelorealce50);
+    opacity: 1;
+}
+
+
+
+.cabecalho__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%; /* Usa padding para espaçamento interno */
+  background-color: var(--mainroxo75);
+  width: 100%; /* Ocupa 100% da largura da tela */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+}
+
+.cabecalho__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cabecalho__logo img {
+  width: 30%;
+}
+
+.texto__titulo{
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.texto__subtitulo{
+  font-weight: 300;
+}
+
+.logo__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--amarelorealce100);
+    font-weight: bold;
+}
+
+.cabecalho__botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.botoes__botao {
+    background-color: var(--mainroxo100);
+    color: var(--amarelorealce);
+    border: 3px solid var(--amarelorealce);
+    width: 284px;
+    height: 85px;
+    color: #F7DE98;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.cabecalho__perfil {
+    background-color: var(--azulperfil);
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.busca {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.busca__pesquisa {
+    background-color: var(--mainroxo75);
+    border-radius: 19px;
+    width: 905px;
+    height: 77px;
+    color: var(--amarelorealce100);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 2px solid var(--amarelorealce100);
+}
+
+.busca__botao {
+    background-color: var(--mainroxo75);
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.personagens-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    gap: 10px;
+    }
+    
+    .personagem-card {
+      display: flex;
+      background-color: var(--mainroxo75);
+      color: #f7de98;
+      padding: 15px;
+      border: #f7de98 solid 3px;
+      border-radius: 10px;
+      align-items: center;
+      width: calc(100% - 40px); 
+      cursor: pointer;
+    }
+
+    .personagem-avatar{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    
+    .personagem-image {
+      width: 338px;
+      height: 542px;
+      margin-right: 15px;
+      border: 2px solid #f7de98;
+    }
+    
+    .personagens__info {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+  }
+  
+  .info__nome {
+    color: #F7DE98;
+    font-family: "Modern Antiqua";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 1.5rem;
+}
+
+  .info__build {
+    background-color: var(--mainroxo100);
+    color: var(--amarelorealce100);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 464px;
+    height: 96px;
+    border: 2px solid var(--amarelorealce100);
+    border-radius: 19px;
+}
+
+.info__build p {
+  color: #F7DE98;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.build__classeraca {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.build__nivel {
+  padding-top: 10px;
+}
+ 
+.historia__atributos {
+  display: flex;
+  flex-direction: row;
+}
+
+.info__historia {
+  width: 266px;
+  height: 369px;
+  background-color: var(--mainroxo100);
+  border: 2px solid var(--amarelorealce100);
+  border-radius: 19px;
+}
+
+.historia__titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--amarelorealce100);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.historia__conteudo {
+  color: var(--amarelorealce100);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px 5px;
+}
+
+.info__atributos {
+  width: 199px;
+  height: 369px;
+  background-color: var(--mainroxo100);
+  border: 2px solid var(--amarelorealce100);
+  border-radius: 19px;
+}
+
+.atributos__container {
+  width: 170px;
+  height: 340px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.atributos__numeros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--amarelorealce100);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+  
+    /* Estilo do botão Adicionar Magia */
+    .add-personagem-btn {
+      position: fixed;
+      top: 20px;
+      left: 420px; /* Alinha com o início da grid */
+      z-index: 100;
+    }
+    
+    .add-personagem-btn:hover {
+      background-color: #461957 ;
+      color: #f7de98;
+    }
+    
+    /* Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    
+    .modal-content {
+      background-color: rgba(70, 25, 87, 0.75);
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%; /* Responsivo: ocupa 90% da largura da tela */
+      max-width: 400px; /* Limita a largura máxima em telas maiores */
+      max-height: 80vh; /* Define um limite de altura (80% da altura da janela) */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      overflow-y: auto; /* Adiciona scroll vertical, se necessário */
+    }
+    
+    .modal-content h2 {
+      color: #f7de98;
+      margin-bottom: 20px;
+    }
+    
+    .modal-content label {
+      display: block;
+      margin-bottom: 10px;
+      color: #f7de98;
+      font-weight: bold;
+    }
+    
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #461957;
+      border-radius: 5px;
+    }
+    
+    .modal-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+    
+    .modal-buttons button {
+      background-color:  #461957;
+      color: #f7de98;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .modal-buttons button:hover {
+      background-color:  #f7de98;
+      color:  rgba(70, 25, 87, 0.75);
+    }
+    
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .formulario-linha {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      .formulario-linha label {
+        flex: 1; /* Define o tamanho fixo para o rótulo */
+        text-align: right; /* Alinha os rótulos à direita */
+        color: var(--amarelorealce100);
+        font-weight: bold;
+      }
+      
+      .formulario-linha input,
+      .formulario-linha textarea {
+        flex: 2; /* O campo ocupa mais espaço */
+        padding: 8px;
+      }
+
+  .modal-content p{
+    color: #F7DE98;
+  }
+
+
+
+    
+
+  @media screen and (max-width: 480px) {
+      .modal-content {
+        width: 95%; /* O modal ocupa quase toda a largura */
+        max-height: 70vh; /* Altura máxima reduzida para telas menores */
+        padding: 15px;
+      }
+
+      main{
+        display: flex;
+        align-items: center;
+      }
+    
+    .cabecalho{
+      display: flex;
+    }
+
+    .personagens-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+    }
+
+    .personagem-avatar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .personagem-card {
+      display: flex;
+      flex-direction: row;
+      border-radius: 10px;
+      align-items: center;
+      width: 400px;
+      margin: 10px 10px 5px 10px;
+      cursor: pointer;
+    }
+    
+    .personagem-image {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #f7de98;
+      display: flex;
+      align-items: center;
+      border-radius: 100%;
+    }
+    
+    .personagens__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      
+  }
+
+  .info__nome {
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+
+}
+
+  .info__build {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    height: 36px;
+    border-radius: 19px;
+}
+
+.info__build p {
+  padding: 5px;
+  font-size: 10px;
+
+}
+
+.build__classeraca {
+  display: flex;
+  flex-direction: row;
+}
+
+.build__nivel {
+  padding-top: 0px;
+}
+ 
+.historia__atributos {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.info__historia {
+  width: 160px;
+  height: 100px;
+  background-color: var(--mainroxo100);
+  border: 2px solid var(--amarelorealce100);
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 5px;
+}
+
+.historia__titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--amarelorealce100);
+  font-size: 10px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.historia__conteudo {
+  color: var(--amarelorealce100);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px 5px;
+}
+
+.info__atributos {
+  width: 100px;
+  height: 100px;
+  background-color: var(--mainroxo100);
+  border: 2px solid var(--amarelorealce100);
+  border-radius: 19px;
+  padding: 5px;
+}
+
+.atributos__container {
+  width: 170px;
+  height: 340px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+
+.atributos__numeros {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  margin: 2px 10px;
+  gap: 2px;
+}
+
+    .cabecalho__container{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .cabecalho__botoes{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .busca{
+      display: flex;
+      gap: 2px;
+      margin: 20px;
+      
+    }
+
+    .busca__pesquisa{
+      width: 200px;
+      height: 20px;
+      font-size: 14px;
+    }
+
+    .busca__botao{
+      width: 20px;
+    }
+
+  }

@@ -1,0 +1,51 @@
+
+.container-login{
+  height: 200%;
+  background-color: var(--fundo);
+  background-image: url(../public/elfamysquire.png), url(../public/cavaleiromysquire.png), url(../public/flordelis.png);
+  background-size: 20%, 25%, 10%;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: left bottom, right bottom, center center; 
+  padding: 109px;
+
+}
+
+.meio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #3f2d08; 
+  gap: 1rem;
+  
+}
+  
+.link-btn {
+  width: 8rem; 
+  padding: 10px; 
+  background-color: #8a2be2;
+  color: #F7DE98;
+  text-decoration: none;
+}
+  
+.meno-login {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    color: #3f2d08; 
+    background-color: none;
+  }
+
+  .meno-login a{
+    text-decoration: none;
+    color: #3f2d08; 
+  }
+  
+  .container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+  }
+  

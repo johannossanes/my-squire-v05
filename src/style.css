@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+#root {
+  --azul: #42AFFB; 
+  --amarelo: #F7DE98;
+  --magenta: #461957;
+  --fundo: #9A8F72;
+  --preto: #272727; 
+  --branco: #fff;
+  --mainroxo100: #461957;
+  --mainroxo75: #461957BF;
+  --amarelorealce100: #F7DE98;
+  --amarelorealce50: #F7DE9880;
+  --azulperfil: #ada58a;
+
+  font-family: "Modern Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
